@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child selector */
+        /* 
+            >           child selector
+            +           immediate sibling selector
+            ~           all sibling selector
+            space       decentant selector
+         */
+        div p {
+            background-color: red;
+        }
+
+        div+p {
+            background-color: blue;
+        }
+
+        div~p {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>para 1</p>
+        <p>para 2</p>
+        <section>
+            <p>para 3</p>
+        </section>
+    </div>
+    <h1>sibling</h1>
+    <p>outside para 1</p>
+
+</body>
+
+</html>
