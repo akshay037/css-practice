@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .d-inline {
+            display: inline;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .w-400 {
+            width: 400px;
+        }
+
+        .d-inline-block {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-red d-inline">box-1</div>
+    <div class="bg-blue d-inline">box-1</div>
+    <hr>
+    <span class="bg-red d-block">span-1</span>
+    <span class="bg-blue d-block">span-2</span>
+    <hr>
+    <!-- width height properties work on block level only inline tags cant handle this properties -->
+    <span class="bg-red w-400">span3</span>
+    <p class="bg-blue w-400">Para</p>
+    <hr>
+    <a href="" class="bg-red d-inline-block w-400">Hello</a>
+    <a href="" class="bg-red">Hi</a>
+</body>
+
+</html>
