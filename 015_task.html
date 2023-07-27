@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --theme: #662D91;
+        }
+
+        body {
+            background: aliceblue;
+        }
+
+        .header {
+            height: 150px;
+            background-color: var(--theme);
+        }
+
+        .card {
+            width: 403px;
+            border: 2px solid var(--theme);
+            margin: -134px auto 0px;
+        }
+
+        .card-header {
+            background-image: url(background.svg);
+            color: #fff;
+            height: 133px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-body span {
+            background-color: var(--theme);
+            color: #fff;
+            padding: 7px;
+            width: 100px;
+            border-radius: 2px;
+        }
+
+        .card-body input {
+            width: 100%;
+            border-radius: 2px;
+            border: solid 1px gray;
+            transition: 250ms;
+        }
+
+        .card-body input:hover {
+            transform: scale(1.1);
+        }
+
+        .card-body p {
+            margin: 10px 0px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .card button {
+            background-color: var(--theme);
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="card">
+        <div class="card-header">
+            <h1>Secure login</h1>
+            <p>powered by skillhub</p>
+            <hr>
+        </div>
+        <div class="card-body">
+            <div class="d-flex">
+                <span>Username</span>
+                <input type="text">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="d-flex">
+                <span>Class pin</span>
+                <input type="text">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur <b>adipisicing</b></p>
+            <div class="d-flex">
+                <span>Password</span>
+                <input type="text">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+
+            <button>Login</button>
+            <a href="">Trouble login</a>
+        </div>
+    </div>
+</body>
+
+</html>
