@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* px, em, rem, %, vh, vw */
+        .test {
+            /* 1em is equal to 16px and dipends on parents font size if parent has 2 em so child will have 16 X font size */
+            /* font-size: 1em;  */
+
+            /* 1rem is equal to 16px */
+            font-size: 4rem;
+        }
+
+        .box {
+            background-color: red;
+            height: 100px;
+            width: 400px;
+        }
+
+        .child {
+            background-color: blue;
+            width: 50%;
+        }
+
+        .demo {
+            /* v stand for view port means visible area of browser and h,w is known as height and width */
+            background-color: aquamarine;
+            height: 50vh;
+            width: 25vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <span>
+        span 1<span class="test">span 2</span>
+    </span>
+
+    <div class="box">
+        <div class="child">child</div>
+    </div>
+    <div class="child">child</div>
+
+</body>
+
+</html>
