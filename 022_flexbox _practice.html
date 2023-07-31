@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 400px;
+            background-color: gray;
+            gap: 40px;
+            display: flex;
+
+        }
+
+        .child1 {
+            background-color: red;
+            flex: 1;
+
+        }
+
+        .child2 {
+            background-color: blue;
+            flex: 2;
+        }
+
+        @media(max-width:500px) {
+            .parent {
+                flex-direction: coloumn;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+    </div>
+</body>
+
+</html>

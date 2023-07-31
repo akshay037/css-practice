@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --theme: coral;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url(assets/bg.svg);
+            background-size: cover;
+            background-position: bottom left;
+        }
+
+        .img-hero {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100vh;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 15%;
+            left: 12%;
+        }
+
+        .hero-content h1 {
+            color: white;
+            font-size: 5rem;
+        }
+
+        .hero-content p {
+            color: #aaa;
+            width: 45%;
+            font-size: 1.5rem;
+        }
+
+        .sticky {
+            padding: 0px 100px;
+            height: 100px;
+            background-color: var(--theme);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .sticky>a {
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <img class="img-hero" src="assets/bg-dots.svg" alt="">
+        <img class="img-hero" src="assets/user.png" alt="">
+        <div class="hero-content">
+            <h1>Hi my name is john</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo similique optio autem unde aut
+                suscipit
+                et in dolor eligendi quas, dignissimos aperiam reprehenderit hic at molestiae blanditiis nesciunt
+                laborum.
+            </p>
+            <a href="">Hire me</a>
+        </div>
+    </div>
+    <div class="sticky">
+        <a href="">John</a>
+        <a href="">Home</a>
+        <a href="">Education</a>
+        <a href="">Project</a>
+        <a href="">Experince</a>
+        <a href="">Contact</a>
+    </div>
+
+
+
+</body>
+
+</html>
