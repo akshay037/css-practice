@@ -47,9 +47,21 @@
             font-size: 1.5rem;
         }
 
+        .sticky a {
+            border: 5px solid var(--theme);
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            transition: 300ms;
+        }
+
+        .sticky a:hover {
+            transform: scale(1.2);
+        }
+
         .sticky {
             padding: 0px 100px;
-            height: 100px;
+            height: 80px;
             background-color: var(--theme);
             display: flex;
             justify-content: space-between;
@@ -62,8 +74,74 @@
             color: blue;
             text-decoration: none;
             font-size: 20px;
+        }
 
+        .skills {
+            width: 80%;
+            margin: 1rem auto;
+        }
 
+        .progress {
+            background-color: #eee;
+            height: 2rem;
+            margin: 2rem 0;
+        }
+
+        .progress-bar {
+            background-color: var(--theme);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .html {
+            width: 80%;
+        }
+
+        .css {
+            width: 70%;
+        }
+
+        .js {
+            width: 75%;
+        }
+
+        .react {
+            width: 65%;
+        }
+
+        .inline-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 50px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 20%;
+            border: solid gray;
+            border-radius: 15px;
+        }
+
+        .card-header img {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        .card-body {
+            padding: 1rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -79,6 +157,8 @@
                 et in dolor eligendi quas, dignissimos aperiam reprehenderit hic at molestiae blanditiis nesciunt
                 laborum.
             </p>
+            <br>
+            <br>
             <a href="">Hire me</a>
         </div>
     </div>
@@ -90,7 +170,74 @@
         <a href="">Experince</a>
         <a href="">Contact</a>
     </div>
+    <h2 style="color: cornflowerblue; margin: 30px 0px 0px 0px; text-align: center;">Progress of Skills</h2>
+    <div class="inline-item">
+        <div class="skills">
+            <h2 style="color: rgb(100, 121, 237); margin: 10px 0px 0px 0px; text-align: center;">Technical Skills</h2>
+            <div class="progress">
+                <div class="progress-bar html">HTML</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">CSS</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar js">JAVASCRIPT</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar react">REACT</div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2 style="color: rgb(100, 121, 237); margin: 10px 0px 0px 0px; text-align: center;">Soft Skills</h2>
+            <div class="progress">
+                <div class="progress-bar" style="width: 85%;">COMMUNICATION</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;">TEAM WORK</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;">PROBLEM SOLVING</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;">DSA</div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="card">
+            <div class="card-header"><img src="https://source.unsplash.com/400x450/?mobile,laptop" alt=""></div>
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="" style="text-decoration: none;">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><img src="https://source.unsplash.com/400x450/?bike,laptop" alt=""></div>
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="" style="text-decoration: none;">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><img src="https://source.unsplash.com/400x450/?mobile,card" alt=""></div>
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="" style="text-decoration: none;">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><img src="https://source.unsplash.com/400x450/?money,laptop" alt=""></div>
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="" style="text-decoration: none;">Visit</a>
+            </div>
+        </div>
+    </div>
 
 
 </body>
